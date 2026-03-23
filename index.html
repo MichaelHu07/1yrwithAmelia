@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Skies &amp; Soft Paws</title>
+  <meta
+    name="description"
+    content="A full-screen anniversary website with a public golden retriever 3D model, spatial-style story gallery, heartfelt message reveal, and floating music player."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="background-wash" aria-hidden="true">
+    <canvas id="petal-canvas"></canvas>
+    <span class="wash-orb orb-one"></span>
+    <span class="wash-orb orb-two"></span>
+    <span class="wash-orb orb-three"></span>
+    <span class="wash-grid"></span>
+  </div>
+
+  <header class="journey-nav" aria-label="Story navigation">
+    <button class="journey-nav__button is-active" type="button" data-scroll-target="hero">Home</button>
+    <button class="journey-nav__button" type="button" data-scroll-target="gallery-intro">Gallery</button>
+    <button class="journey-nav__button" type="button" data-scroll-target="message-stage">Letter</button>
+  </header>
+
+  <section class="hero-stage" id="hero" data-journey-section="hero">
+    <canvas id="dog-scene" aria-hidden="true"></canvas>
+    <div class="hero-stage__veil"></div>
+
+    <div class="hero-copy">
+      <p class="hero-copy__eyebrow">Our Anniversary Story</p>
+      <h1>Blue skies, soft paws, and the way everything feels better with you.</h1>
+      <p class="hero-copy__lede">
+        The site opens with the retriever front and center, then drifts into a
+        scrapbook-like gallery before landing on a little note made just for her.
+      </p>
+    </div>
+
+    <button class="start-journey" id="start-journey" type="button">
+      Left click to begin our story
+    </button>
+
+    <p class="hero-hint" id="hero-hint">
+      Move your mouse to nudge the retriever, then click anywhere on this scene to glide into the gallery.
+    </p>
+  </section>
+
+  <main class="story-shell">
+    <section class="gallery-intro section-shell" id="gallery-intro" data-journey-section="gallery">
+      <p class="section-shell__eyebrow">Gallery</p>
+      <h2>Scroll through the little moments that feel the most like us.</h2>
+      <p class="section-shell__lede">
+        Instead of cards in a grid, each memory floats to one side with the words
+        breathing on the other, so the whole page feels more like a soft storybook.
+      </p>
+    </section>
+
+    <section class="memory-stack" id="memory-stack" aria-label="Memory gallery"></section>
+
+    <section class="message-transition" id="message-transition">
+      <p class="message-transition__eyebrow">One more thing</p>
+      <h2>There's a letter waiting at the end of the scroll.</h2>
+      <button class="transition-button" id="open-letter-journey" type="button">
+        Open the message
+      </button>
+    </section>
+
+    <section class="message-stage" id="message-stage" data-journey-section="message">
+      <div class="message-stage__floating" id="message-reasons" aria-hidden="true"></div>
+
+      <div class="message-stage__inner">
+        <button class="letter-toggle" id="letter-toggle" type="button" aria-expanded="false">
+          Open the note
+        </button>
+
+        <article class="letter-card" id="letter-card">
+          <div class="letter-card__paper">
+            <p class="letter-greeting">To my favorite person,</p>
+            <div class="message-content" id="message-content"></div>
+            <p class="letter-signature">Love always,<br><span>Yours</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside class="music-widget" aria-label="Background music player">
+    <div class="music-cover" id="music-cover" aria-hidden="true"></div>
+
+    <div class="music-meta">
+      <p class="music-meta__eyebrow">Looped Playlist</p>
+      <h3 id="music-title">Bluebell Waltz</h3>
+      <p id="music-artist">Soft Tape Mix</p>
+    </div>
+
+    <div class="music-controls" aria-label="Playback controls">
+      <button class="icon-button" id="prev-track" type="button" aria-label="Previous song">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 6h2v12H7V6Zm10.5 0L10 12l7.5 6V6Z" fill="currentColor"></path>
+        </svg>
+      </button>
+      <button class="icon-button icon-button--primary" id="play-pause" type="button" aria-label="Play music">
+        <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 6.5v11l9-5.5-9-5.5Z" fill="currentColor"></path>
+        </svg>
+        <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 6h3v12H8V6Zm5 0h3v12h-3V6Z" fill="currentColor"></path>
+        </svg>
+      </button>
+      <button class="icon-button" id="next-track" type="button" aria-label="Next song">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 6h2v12h-2V6ZM6.5 6 14 12l-7.5 6V6Z" fill="currentColor"></path>
+        </svg>
+      </button>
+    </div>
+
+    <label class="volume-control" for="volume-slider">
+      <span>Volume</span>
+      <input id="volume-slider" type="range" min="0" max="100" value="56">
+    </label>
+
+    <p class="music-status" id="music-status">Tap play once and the playlist will keep looping in the corner.</p>
+  </aside>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
