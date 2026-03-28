@@ -792,8 +792,9 @@ body.nav-visible .journey-nav {
 }
 
 .letter-card.is-open .letter-card__paper {
-  max-height: 1000px;
-  padding: 1.5rem 1.35rem 1.4rem;
+  max-height: 1600px;
+  padding: 1.5rem 1.35rem 1.9rem;
+  overflow: visible;
 }
 
 .letter-greeting,
