@@ -1,191 +1,268 @@
 const messageParagraphs = [
-  "Happy anniversary, my love. Thank you for making life feel calmer, brighter, and so much sweeter just by being in it.",
-  "I love how the smallest moments with you somehow become the ones I never want to forget, whether it is a quiet drive, a soft little laugh, or a day that felt ordinary until we shared it.",
-  "This site is only a tiny love letter compared to everything I feel for you, but I wanted it to feel gentle, thoughtful, and completely made with you in mind.",
-  "I hope we keep finding new reasons to celebrate us, keep collecting small favorite memories, and keep making life feel this warm together."
-];
-
-const reasons = [
-  "your laugh",
-  "our tiny adventures",
-  "the way you make everything softer",
-  "cozy drives with you",
-  "every future plan we dream up",
-  "how easy it feels to be myself around you"
+  "To the amazing girl who has officially put up with me for a year now, Happy One-Year Anniversary! From the day I met you to now, so much has changed! Over the course of our year together, I’ve seen so many different sides of you: headstrong yet accommodating, vulnerable yet confident, energetic yet peaceful, and diligent yet lazy. And each one of these, I love dearly, even those you might think of as negative, because everything you do is so irresistibly adorable.",
+  "Whether you're plopped on the couch ready for a massage, tucked in the bed watching a tv show or sat in your chair, tirelessly studying for an exam, its impossible to find a moment I don't find you endearing and admirable. Though, I do sometimes wish you'd be less harsh on yourself. Sometimes you seem to forget what an amazingly talented and smart girl you are, so I just wanted to remind you, 多有点自信！You're the most beautiful, talented, and intelligent lady I know, so don't count yourself short!",
+  "If you heard that out loud, I'm sure you'd probably say something like, “bruh, shut-up,” but that's okay, I love that part of you too. In fact, I love the little dance you do when you eat something tasty, I love the way you bat your eyelashes at me when you want to do something, I love how you scoot into my arms when we cuddle at night, I love the little butt wiggle you do when I’m lying on your back, and there's so many things I love about you that I'm sure my computer would struggle to show them all. To tell you the truth, if it's something you do, I’m sure I would find it lovable and cute. You say I’m easy, but maybe you should just consider that you’re way too charming. It's all your fault, really.",
+  "If I’m guessing correctly, that was probably another one of those “bruh, shut-up” moments, but again, that’s okay. More than anything, I just hope you always remember that you can feel safe to be your unfiltered self, because nothing could change my love and admiration for you.",
+  "When we’re together, it sometimes feels like we’re already an old married couple–bickering about dinner, doing our work side-by-side, and filling out your apartment together. And like any old married couple, we have our disagreements, our ups, and our downs. But even then, there’s no one I’d rather stand beside through it all than you. So please stay me just a bit longer, and I'll cherish every moment I have with you. I love you the most,",
 ];
 
 const memories = [
   {
-    eyebrow: "Golden Hour Walk",
-    title: "The kind of evening where even the air feels softer.",
-    copy: "The light turns pastel, everything slows down, and somehow just walking next to you feels like enough to make the whole day better.",
-    detail: "Quiet steps, warm light, and one more reason to stay out a little longer.",
-    align: "left",
-    art: createBackdropSvg({
-      top: "#def2ff",
-      bottom: "#fff2e6",
-      hill: "#cfe8ff",
-      glow: "#ffd8bc",
-      detail: "#ffffff",
-      accent: "#8bc2ff"
-    }),
-    depth: createDepthSvg({
-      accent: "#8bc2ff",
-      detail: "#ffe7cf",
-      sticker: "#ffffff",
-      stroke: "#6fa8e6",
-      label: "Walk"
-    }),
+    eyebrow: "",
+    title: "Our First Night Together",
+    copy: "If no one else was on the bus, I'm sure I'd have kissed you again.",
+    detail: "",
+    align: "right",
+    photo: "./assets/gallery/IMG_0283.jpg",
     washTop: "rgba(223, 243, 255, 0.94)",
-    washBottom: "rgba(255, 244, 234, 0.84)"
+    washBottom: "rgba(255, 244, 234, 0.84)",
+    lineTilt: "-2.2deg",
+    cardTilt: "-2.8deg",
+    swayRange: "1.3deg",
+    swayDuration: "7.6s",
+    swayDelay: "-1.4s"
   },
   {
-    eyebrow: "Blue Hour Drive",
-    title: "Windows down, music on, nowhere urgent to be.",
-    copy: "Those little drives where the sky turns blue and everything feels suspended for a while are some of my favorite versions of us.",
-    detail: "Just enough light left, one playlist, and your hand finding mine at the stoplights.",
-    align: "right",
-    art: createBackdropSvg({
-      top: "#d6ebff",
-      bottom: "#eef7ff",
-      hill: "#bddcff",
-      glow: "#ffd7c2",
-      detail: "#ffffff",
-      accent: "#7fb6ff"
-    }),
-    depth: createDepthSvg({
-      accent: "#7fb6ff",
-      detail: "#ffe8d9",
-      sticker: "#ffffff",
-      stroke: "#679ee0",
-      label: "Drive"
-    }),
+    eyebrow: "",
+    title: "Your First Bouquet Of Flowers",
+    copy: "A shoddy bouquet I prepared with an assortment of flowers I bought from walmart, publix, and H-mart",
+    detail: "",
+    align: "left",
+    photo: "./assets/gallery/IMG_0243.jpg",
     washTop: "rgba(214, 235, 255, 0.95)",
-    washBottom: "rgba(238, 247, 255, 0.82)"
+    washBottom: "rgba(238, 247, 255, 0.82)",
+    lineTilt: "0.75deg",
+    cardTilt: "2.1deg",
+    swayRange: "1.45deg",
+    swayDuration: "8.3s",
+    swayDelay: "-2.2s"
   },
   {
-    eyebrow: "Sweet Little Detours",
-    title: "The tiny plans always end up feeling the most special.",
-    copy: "A quick dessert stop, a lazy store run, a random walk that turns into a memory. I love how easy it is for us to turn simple things into favorites.",
-    detail: "Little plans somehow become the ones I replay the most.",
-    align: "left",
-    art: createBackdropSvg({
-      top: "#dff3ff",
-      bottom: "#fff4ea",
-      hill: "#c5e4ff",
-      glow: "#ffd9c4",
-      detail: "#ffffff",
-      accent: "#8fc8eb"
-    }),
-    depth: createDepthSvg({
-      accent: "#82c6e5",
-      detail: "#ffe9d8",
-      sticker: "#ffffff",
-      stroke: "#67abc8",
-      label: "Treat"
-    }),
-    washTop: "rgba(223, 243, 255, 0.95)",
-    washBottom: "rgba(255, 244, 235, 0.83)"
-  },
-  {
-    eyebrow: "Rainy Day Hiding",
-    title: "The quiet kind of day that only feels good with the right person.",
-    copy: "When everything outside turns gray, being close to you somehow makes the whole day feel warmer, slower, and exactly where I want to be.",
-    detail: "Blankets, low light, and no reason to be anywhere else.",
+    eyebrow: "",
+    title: "One Of My Favorite Silly Photos",
+    copy: "Perhaps my first time using a skincare face mask",
+    detail: "",
     align: "right",
-    art: createBackdropSvg({
-      top: "#d2e7ff",
-      bottom: "#f4fbff",
-      hill: "#bddbff",
-      glow: "#ffe0cb",
-      detail: "#f7fbff",
-      accent: "#7db5ff"
-    }),
-    depth: createDepthSvg({
-      accent: "#7db5ff",
-      detail: "#fbe7d4",
-      sticker: "#ffffff",
-      stroke: "#689fe1",
-      label: "Rain"
-    }),
-    washTop: "rgba(210, 231, 255, 0.95)",
-    washBottom: "rgba(244, 251, 255, 0.84)"
+    photo: "./assets/gallery/IMG_0304.jpg",
+    washTop: "rgba(223, 243, 255, 0.94)",
+    washBottom: "rgba(255, 244, 234, 0.84)",
+    lineTilt: "-1.8deg",
+    cardTilt: "-1.9deg",
+    swayRange: "1.3deg",
+    swayDuration: "7.6s",
+    swayDelay: "-1.4s"
   },
   {
-    eyebrow: "Slow Sunday",
-    title: "The kind of peace I only really feel with you.",
-    copy: "No big plans, no rush, just that easy feeling of being together while the day unfolds in its own soft little way.",
-    detail: "The best reset is usually just time with you.",
+    eyebrow: "",
+    title: "Memories At Oxford",
+    copy: "I'm not sure if you could tell, but I love hugs with you the most",
+    detail: "",
     align: "left",
-    art: createBackdropSvg({
-      top: "#dcf0ff",
-      bottom: "#fff1e9",
-      hill: "#cde8ff",
-      glow: "#ffd8c4",
-      detail: "#ffffff",
-      accent: "#8ac2ff"
-    }),
-    depth: createDepthSvg({
-      accent: "#8ac2ff",
-      detail: "#ffe6d2",
-      sticker: "#ffffff",
-      stroke: "#72ace8",
-      label: "Sunday"
-    }),
+    photo: "./assets/gallery/IMG_0330.jpg",
+    washTop: "rgba(214, 235, 255, 0.95)",
+    washBottom: "rgba(238, 247, 255, 0.82)",
+    lineTilt: "1.05deg",
+    cardTilt: "1.2deg",
+    swayRange: "1.45deg",
+    swayDuration: "8.3s",
+    swayDelay: "-2.2s"
+  },
+  {
+    eyebrow: "",
+    title: "Our First Month Anniversary Dinner",
+    copy: "Haven't my photography skills gotten so much better? This was the only picture where the table didn't take up half the picture...",
+    detail: "",
+    align: "right",
+    photo: "./assets/gallery/IMG_3444.jpg",
+    washTop: "rgba(223, 243, 255, 0.94)",
+    washBottom: "rgba(255, 244, 234, 0.84)",
+    lineTilt: "-2.3deg",
+    cardTilt: "-1.9deg",
+    swayRange: "1.3deg",
+    swayDuration: "7.6s",
+    swayDelay: "-1.4s"
+  },
+  {
+    eyebrow: "",
+    title: "A Relaxing Position For Amelia",
+    copy: "I hope my wrist heals quickly so you can get back to hanging on my arm ASAP",
+    detail: "",
+    align: "left",
+    photo: "./assets/gallery/IMG_3448.jpg",
+    washTop: "rgba(214, 235, 255, 0.95)",
+    washBottom: "rgba(238, 247, 255, 0.82)",
+    lineTilt: "1.05deg",
+    cardTilt: "1.2deg",
+    swayRange: "1.45deg",
+    swayDuration: "8.3s",
+    swayDelay: "-2.2s"
+  },
+  {
+    eyebrow: "",
+    title: "Stocking Up At IKEA",
+    copy: "The beginning to the hundreds of memories we would make in a little apartment on North Decatur Road",
+    detail: "",
+    align: "left",
+    photo: "./assets/gallery/img-1718-photo.jpg",
+    washTop: "rgba(223, 243, 255, 0.94)",
+    washBottom: "rgba(255, 244, 234, 0.84)",
+    lineTilt: "-0.6deg",
+    cardTilt: "-1.8deg",
+    swayRange: "1.3deg",
+    swayDuration: "7.6s",
+    swayDelay: "-1.4s"
+  },
+  {
+    eyebrow: "",
+    title: "The Cutest Sleepyhead Ever",
+    copy: "Skin as white as snow and softer than marshmallows",
+    detail: "",
+    align: "right",
+    photo: "./assets/gallery/img-3359-photo.jpg",
+    washTop: "rgba(214, 235, 255, 0.95)",
+    washBottom: "rgba(238, 247, 255, 0.82)",
+    lineTilt: "0.75deg",
+    cardTilt: "2.1deg",
+    swayRange: "1.45deg",
+    swayDuration: "8.3s",
+    swayDelay: "-2.2s"
+  },
+  {
+    eyebrow: "",
+    title: "Holding Hands With You On A Hike",
+    copy: "I don't want you to trip and hurt yourself so hold on and never let go",
+    detail: "",
+    align: "left",
+    photo: "./assets/gallery/img-8972-photo.jpg",
     washTop: "rgba(220, 240, 255, 0.94)",
-    washBottom: "rgba(255, 241, 233, 0.84)"
-  }
+    washBottom: "rgba(255, 241, 233, 0.84)",
+    lineTilt: "-0.55deg",
+    cardTilt: "-1.7deg",
+    swayRange: "1.1deg",
+    swayDuration: "7.1s",
+    swayDelay: "-0.7s"
+  },
+  {
+    eyebrow: "",
+    title: "The Luckiest Guy Ever With The Prettiest Girl Ever",
+    copy: "\"How did he pull you\" -Katherine Hu",
+    detail: "",
+    align: "right",
+    photo: "./assets/gallery/IMG_9136.jpg",
+    washTop: "rgba(231, 242, 255, 0.95)",
+    washBottom: "rgba(255, 245, 236, 0.84)",
+    lineTilt: "0.6deg",
+    cardTilt: "1.8deg",
+    swayRange: "1.35deg",
+    swayDuration: "8.8s",
+    swayDelay: "-3.1s"
+  },
+  {
+    eyebrow: "",
+    title: "Last Day At Oxford",
+    copy: "Somehow, You made me love my first semester at Oxford. I hope you feel the same way",
+    detail: "",
+    align: "left",
+    photo: "./assets/gallery/img-9787-photo.jpg",
+    washTop: "rgba(214, 235, 255, 0.95)",
+    washBottom: "rgba(238, 247, 255, 0.82)",
+    lineTilt: "1.05deg",
+    cardTilt: "1.2deg",
+    swayRange: "1.45deg",
+    swayDuration: "8.3s",
+    swayDelay: "-2.2s"
+  },
 ];
 
 const playlist = [
+  
+  {
+    title: "Nothing",
+    artist: "Bruno Mars",
+    src: "./assets/music/Nothing.mp3",
+    cover: "./assets/music/icons/track-04"
+  },
+  {
+    title: "I Like Me Better",
+    artist: "Lauv",
+    src: "./assets/music/I Like Me Better.mp3",
+    cover: "./assets/music/icons/track-05"
+  },
+  {
+    title: "Hold me, never let go",
+    artist: "Rocco",
+    src: "./assets/music/hold me, never let go.mp3",
+    cover: "./assets/music/icons/track-02"
+  },
   {
     title: "Love... at first sight",
     artist: "Regina Song",
     src: "./assets/music/love... at first sight.mp3",
-    cover: createCoverSvg({
-      top: "#87c2ff",
-      bottom: "#d7ecff",
-      accent: "#fff5ef",
-      line: "#5a96dd",
-      label: "BW"
-    })
+    cover: "./assets/music/icons/track-01"
   },
   {
-    title: "Track 02",
-    artist: "Add artist name",
-    src: "./assets/music/song-02.mp3",
-    cover: createCoverSvg({
-      top: "#91d2ff",
-      bottom: "#fff1e8",
-      accent: "#ffffff",
-      line: "#74b1ed",
-      label: "CD"
-    })
+    title: "Jupiter To Mars",
+    artist: "Rocco",
+    src: "./assets/music/Jupiter to Mars.mp3",
+    cover: "./assets/music/icons/track-02"
   },
   {
-    title: "Track 03",
-    artist: "Add artist name",
-    src: "./assets/music/song-03.mp3",
-    cover: createCoverSvg({
-      top: "#7eb9ff",
-      bottom: "#d2ecff",
-      accent: "#ffe6d4",
-      line: "#5e99de",
-      label: "SK"
-    })
-  }
+    title: "Glue Song",
+    artist: "beabadoobee",
+    src: "./assets/music/Glue Song.mp3",
+    cover: "./assets/music/icons/track-03"
+  },
+  
+  
 ];
 
+const modelCatalog = {
+  pocky: {
+    label: "Pocky",
+    alt: "Pocky, a low poly golden retriever",
+    candidates: [
+      "./assets/low poly dog 3d model.glb",
+      "./assets/golden-retriever.glb"
+    ],
+    cameraOrbit: "32deg 78deg auto",
+    minCameraOrbit: "auto 58deg auto",
+    maxCameraOrbit: "auto 102deg auto",
+    fieldOfView: "24deg",
+    exposure: "1.02",
+    status: "Pocky is on screen. Drag to orbit."
+  },
+  yuki: {
+    label: "Yuki",
+    alt: "Yuki, a seal",
+    candidates: [
+      "./assets/yuki.glb",
+      "./assets/Yuki.glb",
+      "./assets/yuki seal.glb",
+      "./assets/Yuki seal.glb",
+      "./assets/yuki-seal.glb",
+      "./assets/Yuki-seal.glb",
+      "./assets/seal.glb"
+    ],
+    cameraOrbit: "18deg 76deg auto",
+    minCameraOrbit: "auto 60deg auto",
+    maxCameraOrbit: "auto 100deg auto",
+    fieldOfView: "25deg",
+    exposure: "1.04",
+    status: "Yuki is on screen. Drag to orbit."
+  }
+};
+
 const heroStage = document.querySelector("#hero");
-const heroHint = document.querySelector("#hero-hint");
 const petalCanvas = document.querySelector("#petal-canvas");
-const startJourneyButton = document.querySelector("#start-journey");
+const dogViewer = document.querySelector("#dog-viewer");
+const heroStatus = document.querySelector("#hero-status");
+const heroMenuButtons = Array.from(document.querySelectorAll("[data-hero-target]"));
+const modelButtons = Array.from(document.querySelectorAll("[data-model-key]"));
 const galleryIntro = document.querySelector("#gallery-intro");
 const messageStage = document.querySelector("#message-stage");
 const openLetterJourneyButton = document.querySelector("#open-letter-journey");
 const memoryStack = document.querySelector("#memory-stack");
 const messageContent = document.querySelector("#message-content");
-const messageReasons = document.querySelector("#message-reasons");
 const letterCard = document.querySelector("#letter-card");
 const letterToggle = document.querySelector("#letter-toggle");
 const navButtons = Array.from(document.querySelectorAll("[data-scroll-target]"));
@@ -199,16 +276,26 @@ const prevTrackButton = document.querySelector("#prev-track");
 const nextTrackButton = document.querySelector("#next-track");
 const volumeSlider = document.querySelector("#volume-slider");
 const musicWidget = document.querySelector(".music-widget");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const audio = new Audio();
 audio.preload = "metadata";
+audio.autoplay = true;
+audio.playsInline = true;
+const trackCoverExtensions = [".png", ".jpg", ".jpeg"];
 let currentTrackIndex = 0;
 let autoplayPrimed = false;
 let lastUserVolume = Number(volumeSlider.value) / 100;
-let hasStartedJourney = false;
+let activeCoverLoadId = 0;
+let activeModelKey = "pocky";
+let pendingModelCandidates = [];
+let currentModelConfig = modelCatalog[activeModelKey];
+let modelFallbackTimeout = 0;
+let startupAutoplayResolved = false;
+let startupAutoplayArmed = false;
 
+syncVisualMode();
 renderMessage();
-renderReasons();
 renderMemories();
 setupMemoryReveal();
 setupLetter();
@@ -227,36 +314,6 @@ function renderMessage() {
   });
 }
 
-function renderReasons() {
-  const placements = [
-    { top: "13%", left: "8%", rotate: "-8deg" },
-    { top: "20%", right: "10%", rotate: "7deg" },
-    { top: "42%", left: "6%", rotate: "-5deg" },
-    { top: "54%", right: "8%", rotate: "9deg" },
-    { top: "74%", left: "14%", rotate: "-7deg" },
-    { top: "80%", right: "14%", rotate: "6deg" }
-  ];
-
-  messageReasons.innerHTML = "";
-  reasons.forEach((reason, index) => {
-    const token = document.createElement("span");
-    token.className = "love-orb";
-    token.textContent = reason;
-    token.style.top = placements[index].top;
-    token.style.setProperty("--orb-rotate", placements[index].rotate);
-
-    if (placements[index].left) {
-      token.style.left = placements[index].left;
-    }
-
-    if (placements[index].right) {
-      token.style.right = placements[index].right;
-    }
-
-    messageReasons.appendChild(token);
-  });
-}
-
 function renderMemories() {
   memoryStack.innerHTML = "";
 
@@ -264,26 +321,48 @@ function renderMemories() {
     const scene = document.createElement("section");
     scene.className = `memory-scene memory-scene--${memory.align}`;
     scene.id = `memory-${index + 1}`;
+    scene.style.setProperty("--line-tilt", memory.lineTilt);
 
     scene.innerHTML = `
       <div class="memory-media">
-        <article class="spatial-card">
-          <div
-            class="spatial-card__inner"
-            style="
-              --art-image: url('${memory.art}');
-              --depth-image: url('${memory.depth}');
-              --wash-top: ${memory.washTop};
-              --wash-bottom: ${memory.washBottom};
-            "
-          >
-            <div class="spatial-card__wash"></div>
-            <div class="spatial-card__art"></div>
-            <div class="spatial-card__depth"></div>
-            <div class="spatial-card__shine"></div>
-            <div class="spatial-card__caption">
-              <h4>${memory.eyebrow}</h4>
-              <p>${memory.detail}</p>
+        <div class="memory-line" aria-hidden="true"></div>
+        <article
+          class="spatial-card"
+          style="
+            --card-tilt: ${memory.cardTilt};
+            --sway-range: ${memory.swayRange};
+            --sway-duration: ${memory.swayDuration};
+            --sway-delay: ${memory.swayDelay};
+          "
+        >
+          <div class="spatial-card__motion">
+            <div class="spatial-card__hang">
+              <div class="spatial-card__assembly">
+                <div class="spatial-card__pin" aria-hidden="true"></div>
+                <div
+                  class="spatial-card__inner"
+                  style="
+                    --wash-top: ${memory.washTop};
+                    --wash-bottom: ${memory.washBottom};
+                  "
+                >
+                  <div class="spatial-card__wash"></div>
+                  <div class="spatial-card__frame">
+                    <img
+                      class="spatial-card__photo spatial-card__photo--primary"
+                      src="${memory.photo}"
+                      alt="${memory.eyebrow}"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    >
+                  </div>
+                  <div class="spatial-card__shine"></div>
+                  <div class="spatial-card__caption">
+                    <h4>${memory.eyebrow}</h4>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -296,7 +375,6 @@ function renderMemories() {
       </div>
     `;
 
-    setupSpatialCard(scene.querySelector(".spatial-card"));
     memoryStack.appendChild(scene);
   });
 }
@@ -321,37 +399,6 @@ function setupMemoryReveal() {
   scenes.forEach((scene) => observer.observe(scene));
 }
 
-function setupSpatialCard(card) {
-  const updateCard = (event) => {
-    const bounds = card.getBoundingClientRect();
-    const x = (event.clientX - bounds.left) / bounds.width;
-    const y = (event.clientY - bounds.top) / bounds.height;
-    const rotateY = (x - 0.5) * 18;
-    const rotateX = (0.5 - y) * 14;
-
-    card.style.setProperty("--rotate-x", `${rotateX}deg`);
-    card.style.setProperty("--rotate-y", `${rotateY}deg`);
-    card.style.setProperty("--glare-x", `${x * 100}%`);
-    card.style.setProperty("--glare-y", `${y * 100}%`);
-    card.style.setProperty("--lift", "-6px");
-  };
-
-  card.addEventListener("pointerenter", () => {
-    card.classList.add("is-hovered");
-  });
-
-  card.addEventListener("pointermove", updateCard);
-
-  card.addEventListener("pointerleave", () => {
-    card.classList.remove("is-hovered");
-    card.style.setProperty("--rotate-x", "0deg");
-    card.style.setProperty("--rotate-y", "0deg");
-    card.style.setProperty("--glare-x", "50%");
-    card.style.setProperty("--glare-y", "50%");
-    card.style.setProperty("--lift", "0px");
-  });
-}
-
 function setupLetter() {
   letterToggle.addEventListener("click", () => {
     setLetterState(!letterCard.classList.contains("is-open"));
@@ -365,38 +412,33 @@ function setLetterState(isOpen) {
 }
 
 function setupJourney() {
-  const beginJourney = () => {
-    if (hasStartedJourney) {
-      return;
-    }
+  heroMenuButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = document.getElementById(button.dataset.heroTarget);
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
 
-    hasStartedJourney = true;
-    heroStage.classList.add("is-transitioning");
-    heroHint.textContent = "Drifting down into the gallery...";
-
-    window.setTimeout(() => {
-      galleryIntro.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 220);
-  };
-
-  startJourneyButton.addEventListener("click", beginJourney);
-
-  heroStage.addEventListener("mouseup", (event) => {
-    if (event.button !== 0) {
-      return;
-    }
-
-    if (event.target.closest(".start-journey")) {
-      return;
-    }
-
-    beginJourney();
+      if (button.dataset.heroTarget === "message-stage") {
+        window.setTimeout(() => setLetterState(true), 650);
+      }
+    });
   });
 
   openLetterJourneyButton.addEventListener("click", () => {
     messageStage.scrollIntoView({ behavior: "smooth", block: "start" });
     window.setTimeout(() => setLetterState(true), 650);
   });
+
+  const syncNavVisibility = () => {
+    if (!heroStage) {
+      return;
+    }
+
+    const showNav = window.scrollY > Math.max(72, heroStage.clientHeight * 0.18);
+    document.body.classList.toggle("nav-visible", showNav);
+  };
+
+  syncNavVisibility();
+  window.addEventListener("scroll", syncNavVisibility, { passive: true });
 }
 
 function setupSectionNav() {
@@ -441,7 +483,6 @@ function initAmbientEffects() {
     return;
   }
 
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const rootStyle = document.documentElement.style;
   const pointer = {
     x: window.innerWidth * 0.5,
@@ -451,7 +492,7 @@ function initAmbientEffects() {
   const parallax = { x: 0, y: 0 };
   const targetParallax = { x: 0, y: 0 };
   const petals = [];
-  const petalCount = reduceMotion ? 24 : 68;
+  const petalCount = prefersReducedMotion ? 48 : 168;
 
   let width = 0;
   let height = 0;
@@ -465,14 +506,14 @@ function initAmbientEffects() {
       x: Math.random() * (width + 80) - 40,
       y: fromTop ? -20 - Math.random() * height * 0.35 : Math.random() * height,
       size: 4.5 + Math.random() * 6.2,
-      fallSpeed: 18 + Math.random() * 26,
+      fallSpeed: 25 + Math.random() * 26,
       drift: -10 + Math.random() * 20,
       swing: 8 + Math.random() * 12,
       sway: Math.random() * Math.PI * 2,
       swaySpeed: 1 + Math.random() * 1.45,
       rotation: Math.random() * Math.PI,
       rotationSpeed: -1.1 + Math.random() * 2.2,
-      opacity: 0.2 + Math.random() * 0.2
+      opacity: 0.8 + Math.random() * 0.2
     };
   }
 
@@ -480,20 +521,20 @@ function initAmbientEffects() {
     petal.x = Math.random() * (width + 80) - 40;
     petal.y = fromTop ? -20 - Math.random() * height * 0.3 : Math.random() * height;
     petal.size = 4.5 + Math.random() * 6.2;
-    petal.fallSpeed = 18 + Math.random() * 26;
+    petal.fallSpeed = 25 + Math.random() * 26;
     petal.drift = -10 + Math.random() * 20;
     petal.swing = 8 + Math.random() * 12;
     petal.sway = Math.random() * Math.PI * 2;
     petal.swaySpeed = 1 + Math.random() * 1.45;
     petal.rotation = Math.random() * Math.PI;
     petal.rotationSpeed = -1.1 + Math.random() * 2.2;
-    petal.opacity = 0.2 + Math.random() * 0.2;
+    petal.opacity = 0.8 + Math.random() * 0.2;
   }
 
   function resizeCanvas() {
     width = window.innerWidth;
     height = window.innerHeight;
-    dpr = Math.min(window.devicePixelRatio || 1, 1.25);
+    dpr = Math.min(window.devicePixelRatio || 1, 1);
 
     petalCanvas.width = Math.floor(width * dpr);
     petalCanvas.height = Math.floor(height * dpr);
@@ -514,6 +555,11 @@ function initAmbientEffects() {
   }
 
   function drawPetal(petal) {
+    if (document.body.classList.contains("mode-yuki")) {
+      drawGinkgoLeaf(petal);
+      return;
+    }
+
     ctx.save();
     ctx.translate(petal.x, petal.y);
     ctx.rotate(petal.rotation);
@@ -557,6 +603,51 @@ function initAmbientEffects() {
     ctx.restore();
   }
 
+  function drawGinkgoLeaf(petal) {
+    const size = petal.size * 1.22;
+
+    ctx.save();
+    ctx.translate(petal.x, petal.y);
+    ctx.rotate(petal.rotation);
+    ctx.globalAlpha = petal.opacity * 0.96;
+
+    ctx.fillStyle = "#f0cf73";
+    ctx.beginPath();
+    ctx.moveTo(0, size);
+    ctx.quadraticCurveTo(size * 0.18, size * 0.26, size * 0.96, -size * 0.04);
+    ctx.bezierCurveTo(size * 0.7, -size * 0.86, size * 0.16, -size * 1.02, 0, -size * 0.36);
+    ctx.bezierCurveTo(-size * 0.16, -size * 1.02, -size * 0.7, -size * 0.86, -size * 0.96, -size * 0.04);
+    ctx.quadraticCurveTo(-size * 0.18, size * 0.26, 0, size);
+    ctx.fill();
+
+    ctx.strokeStyle = "rgba(179, 126, 42, 0.52)";
+    ctx.lineWidth = Math.max(1, size * 0.08);
+    ctx.lineCap = "round";
+    ctx.beginPath();
+    ctx.moveTo(0, size);
+    ctx.lineTo(0, -size * 0.16);
+    ctx.moveTo(0, size * 0.12);
+    ctx.lineTo(size * 0.38, -size * 0.18);
+    ctx.moveTo(0, size * 0.12);
+    ctx.lineTo(-size * 0.38, -size * 0.18);
+    ctx.stroke();
+
+    ctx.globalAlpha = petal.opacity * 0.28;
+    ctx.fillStyle = "#fff4c9";
+    ctx.beginPath();
+    ctx.ellipse(
+      -size * 0.18,
+      -size * 0.2,
+      size * 0.28,
+      size * 0.16,
+      -0.46,
+      0,
+      Math.PI * 2
+    );
+    ctx.fill();
+    ctx.restore();
+  }
+
   function updatePetals(deltaSeconds) {
     ctx.clearRect(0, 0, width, height);
 
@@ -570,14 +661,14 @@ function initAmbientEffects() {
         const dx = petal.x - pointer.x;
         const dy = petal.y - pointer.y;
         const distanceSquared = dx * dx + dy * dy;
-        const interactionRadius = 26000;
+        const interactionRadius = 52000;
 
         if (distanceSquared < interactionRadius) {
           const distance = Math.sqrt(distanceSquared) || 1;
-          const force = (1 - distanceSquared / interactionRadius) * 112;
+          const force = (1 - distanceSquared / interactionRadius) * 162;
           petal.x += (dx / distance) * force * deltaSeconds;
-          petal.y += (dy / distance) * force * deltaSeconds * 0.92;
-          petal.rotation += force * 0.022 * deltaSeconds;
+          petal.y += (dy / distance) * force * deltaSeconds * 0.96;
+          petal.rotation += force * 0.03 * deltaSeconds;
         }
       }
 
@@ -599,17 +690,15 @@ function initAmbientEffects() {
     const deltaSeconds = Math.min((now - lastTime) / 1000, 0.033);
     lastTime = now;
 
-    parallax.x += (targetParallax.x - parallax.x) * (reduceMotion ? 0.08 : 0.06);
-    parallax.y += (targetParallax.y - parallax.y) * (reduceMotion ? 0.08 : 0.06);
+    parallax.x += (targetParallax.x - parallax.x) * (prefersReducedMotion ? 0.08 : 0.06);
+    parallax.y += (targetParallax.y - parallax.y) * (prefersReducedMotion ? 0.08 : 0.06);
 
     const maxScroll = Math.max(document.documentElement.scrollHeight - height, 1);
     const scrollProgress = latestScroll / maxScroll;
     const scrollShift = scrollProgress * 720;
-    const backgroundDrift = scrollProgress * 160;
     rootStyle.setProperty("--parallax-x", `${parallax.x.toFixed(2)}px`);
     rootStyle.setProperty("--parallax-y", `${parallax.y.toFixed(2)}px`);
     rootStyle.setProperty("--scroll-shift", `${scrollShift.toFixed(2)}px`);
-    rootStyle.setProperty("--background-drift", `${backgroundDrift.toFixed(2)}px`);
 
     updatePetals(deltaSeconds);
     frameId = requestAnimationFrame(animate);
@@ -655,6 +744,7 @@ function setupMusicPlayer() {
   audio.loop = false;
   updateTrackUI(playlist[currentTrackIndex]);
   loadTrack(currentTrackIndex);
+  void attemptStartupAutoplay();
 
   playPauseButton.addEventListener("click", async () => {
     if (audio.paused) {
@@ -682,14 +772,14 @@ function setupMusicPlayer() {
   audio.addEventListener("play", () => {
     musicWidget.classList.add("is-playing");
     playPauseButton.setAttribute("aria-label", "Pause music");
-    musicStatus.textContent = "Playing softly in the background.";
+    musicStatus.textContent = "Playing. ";
   });
 
   audio.addEventListener("pause", () => {
     musicWidget.classList.remove("is-playing");
     playPauseButton.setAttribute("aria-label", "Play music");
     if (autoplayPrimed) {
-      musicStatus.textContent = "Paused. Tap play whenever you want the playlist back.";
+      musicStatus.textContent = "Paused. ";
     }
   });
 
@@ -698,12 +788,13 @@ function setupMusicPlayer() {
   });
 
   audio.addEventListener("loadeddata", () => {
-    if (!autoplayPrimed) {
-      musicStatus.textContent = "Ready to play from your local MP3 files.";
+    if (!startupAutoplayResolved && !audio.error) {
+      void attemptStartupAutoplay();
     }
   });
 
   audio.addEventListener("error", () => {
+    startupAutoplayResolved = true;
     musicStatus.textContent = "Add your MP3 files to assets/music and keep the filenames listed in main.js.";
   });
 }
@@ -724,290 +815,245 @@ async function loadTrack(index) {
   audio.load();
 }
 
+async function attemptStartupAutoplay() {
+  if (startupAutoplayResolved || audio.error || !audio.src) {
+    return;
+  }
+
+  musicStatus.textContent = "Starting the playlist...";
+
+  try {
+    autoplayPrimed = true;
+    await audio.play();
+    startupAutoplayResolved = true;
+  } catch (error) {
+    autoplayPrimed = false;
+
+    if (audio.error) {
+      musicStatus.textContent = "Add your MP3 files to assets/music and keep the filenames listed in main.js.";
+      return;
+    }
+
+    musicStatus.textContent = "";
+    armStartupAutoplay();
+  }
+}
+
+function armStartupAutoplay() {
+  if (startupAutoplayArmed || startupAutoplayResolved) {
+    return;
+  }
+
+  startupAutoplayArmed = true;
+
+  const resumePlayback = async () => {
+    window.removeEventListener("pointerdown", resumePlayback);
+    window.removeEventListener("keydown", resumePlayback);
+    startupAutoplayArmed = false;
+    await attemptStartupAutoplay();
+  };
+
+  window.addEventListener("pointerdown", resumePlayback, { once: true, passive: true });
+  window.addEventListener("keydown", resumePlayback, { once: true });
+}
+
 async function playCurrentTrack() {
   try {
     await audio.play();
+    startupAutoplayResolved = true;
   } catch (error) {
-    musicStatus.textContent = "Tap play after you add your MP3 files to assets/music.";
+    musicStatus.textContent = audio.error
+      ? "Add your MP3 files to assets/music and keep the filenames listed in main.js."
+      : "Playback is waiting for browser permission. Tap play again or interact with the page once.";
   }
 }
 
 function updateTrackUI(track) {
   musicTitle.textContent = track.title;
   musicArtist.textContent = track.artist;
-  musicCover.style.backgroundImage = `url('${track.cover}')`;
+  setTrackCover(track.cover);
   musicStatus.textContent = autoplayPrimed
     ? "Queued and ready."
-    : "Drop your MP3s into assets/music, then tap play.";
+    : "Starting the playlist...";
+}
+
+function setTrackCover(coverPath) {
+  const loadId = ++activeCoverLoadId;
+
+  if (!coverPath) {
+    musicCover.style.removeProperty("--music-cover-art");
+    return;
+  }
+
+  const candidates = /\.[a-z0-9]+$/i.test(coverPath)
+    ? [coverPath]
+    : trackCoverExtensions.map((extension) => `${coverPath}${extension}`);
+
+  tryLoadTrackCover(candidates, 0, loadId);
+}
+
+function tryLoadTrackCover(candidates, index, loadId) {
+  if (index >= candidates.length) {
+    if (loadId === activeCoverLoadId) {
+      musicCover.style.removeProperty("--music-cover-art");
+    }
+    return;
+  }
+
+  const src = candidates[index];
+  const image = new Image();
+
+  image.onload = () => {
+    if (loadId !== activeCoverLoadId) {
+      return;
+    }
+
+    const safeSrc = src.replace(/\\/g, "/").replace(/"/g, "%22");
+    musicCover.style.setProperty("--music-cover-art", `url("${safeSrc}")`);
+  };
+
+  image.onerror = () => {
+    tryLoadTrackCover(candidates, index + 1, loadId);
+  };
+
+  image.src = src;
 }
 
 async function initDogScene() {
-  const canvas = document.querySelector("#dog-scene");
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!dogViewer || !heroStage) {
+    return;
+  }
 
-  try {
-    const THREE = await import("https://unpkg.com/three@0.164.1/build/three.module.js");
-    const { GLTFLoader } = await import("https://unpkg.com/three@0.164.1/examples/jsm/loaders/GLTFLoader.js");
+  if (prefersReducedMotion) {
+    dogViewer.removeAttribute("auto-rotate");
+  } else {
+    dogViewer.setAttribute("auto-rotate", "");
+  }
 
-    const renderer = new THREE.WebGLRenderer({
-      canvas,
-      antialias: true,
-      alpha: true
-    });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.outputColorSpace = THREE.SRGBColorSpace;
-
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 100);
-    camera.position.set(0, 1.4, 8.4);
-
-    const ambient = new THREE.HemisphereLight(0xf9fdff, 0xc8dff3, 2.8);
-    const key = new THREE.DirectionalLight(0xffffff, 2.2);
-    key.position.set(4, 7, 5);
-
-    const fill = new THREE.DirectionalLight(0xb9dcff, 1.4);
-    fill.position.set(-5, 3, 4);
-
-    const rim = new THREE.DirectionalLight(0xffeee4, 0.8);
-    rim.position.set(1, 2, -4);
-
-    scene.add(ambient, key, fill, rim);
-
-    const floorGlow = new THREE.Mesh(
-      new THREE.CircleGeometry(3.8, 48),
-      new THREE.MeshBasicMaterial({
-        color: 0xb8d7ff,
-        transparent: true,
-        opacity: 0.2
-      })
-    );
-    floorGlow.rotation.x = -Math.PI / 2;
-    floorGlow.position.y = -1.38;
-    scene.add(floorGlow);
-
-    const floorCore = new THREE.Mesh(
-      new THREE.CircleGeometry(2.5, 40),
-      new THREE.MeshBasicMaterial({
-        color: 0xffffff,
-        transparent: true,
-        opacity: 0.42
-      })
-    );
-    floorCore.rotation.x = -Math.PI / 2;
-    floorCore.position.y = -1.35;
-    scene.add(floorCore);
-
-    const dogRoot = new THREE.Group();
-    scene.add(dogRoot);
-
-    const sparklePalette = [0xd8edff, 0xffe8d8, 0xffffff, 0xc8e7ff];
-    const sparkles = [];
-
-    for (let i = 0; i < 14; i += 1) {
-      const sparkle = new THREE.Mesh(
-        new THREE.OctahedronGeometry(0.07 + (i % 3) * 0.02, 0),
-        new THREE.MeshStandardMaterial({
-          color: sparklePalette[i % sparklePalette.length],
-          roughness: 0.85,
-          flatShading: true
-        })
-      );
-
-      sparkle.userData = {
-        angle: (Math.PI * 2 * i) / 14,
-        radius: 2.4 + (i % 4) * 0.22,
-        height: -0.05 + (i % 5) * 0.32,
-        speed: 0.38 + (i % 4) * 0.08
-      };
-
-      sparkles.push(sparkle);
-      scene.add(sparkle);
+  heroStage.addEventListener("pointerdown", (event) => {
+    if (event.target.closest("#dog-viewer")) {
+      heroStage.classList.add("is-orbiting");
     }
+  });
 
-    const pointer = { x: 0, y: 0 };
-    const smoothPointer = { x: 0, y: 0 };
+  window.addEventListener("pointerup", () => {
+    heroStage.classList.remove("is-orbiting");
+  });
 
-    heroStage.addEventListener("pointermove", (event) => {
-      const bounds = heroStage.getBoundingClientRect();
-      pointer.x = ((event.clientX - bounds.left) / bounds.width - 0.5) * 2;
-      pointer.y = ((event.clientY - bounds.top) / bounds.height - 0.5) * 2;
-    });
-
-    heroStage.addEventListener("pointerleave", () => {
-      pointer.x = 0;
-      pointer.y = 0;
-    });
-
-    const loader = new GLTFLoader();
-    loader.load(
-      "./assets/golden-retriever.glb",
-      (gltf) => {
-        const dog = gltf.scene;
-        dog.traverse((child) => {
-          if (child.isMesh) {
-            child.frustumCulled = false;
-          }
-        });
-
-        const initialBox = new THREE.Box3().setFromObject(dog);
-        const center = initialBox.getCenter(new THREE.Vector3());
-        const size = initialBox.getSize(new THREE.Vector3());
-        dog.position.sub(center);
-
-        const scale = 4.4 / Math.max(size.x, size.y, size.z);
-        dog.scale.setScalar(scale);
-
-        const adjustedBox = new THREE.Box3().setFromObject(dog);
-        dog.position.y += -1.15 - adjustedBox.min.y;
-        dog.position.x += 0.15;
-        dog.rotation.y = 0.65;
-
-        dogRoot.add(dog);
-      },
-      undefined,
-      () => {
-        showSceneFallback();
-      }
-    );
-
-    const resizeScene = () => {
-      const width = heroStage.clientWidth;
-      const height = heroStage.clientHeight;
-      if (!width || !height) {
+  modelButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const nextKey = button.dataset.modelKey;
+      if (!nextKey || nextKey === activeModelKey) {
         return;
       }
 
-      renderer.setSize(width, height, false);
-      camera.aspect = width / height;
-      camera.updateProjectionMatrix();
-    };
+      activeModelKey = nextKey;
+      currentModelConfig = modelCatalog[activeModelKey] || modelCatalog.pocky;
+      syncVisualMode();
+      updateModelButtonState();
+      loadCurrentModel();
+    });
+  });
 
-    const resizeObserver = new ResizeObserver(resizeScene);
-    resizeObserver.observe(heroStage);
-    resizeScene();
+  dogViewer.addEventListener("load", () => {
+    if (modelFallbackTimeout) {
+      window.clearTimeout(modelFallbackTimeout);
+    }
 
-    const clock = new THREE.Clock();
+    dogViewer.style.opacity = "1";
+    heroStage.classList.add("is-model-ready");
+    heroStage.querySelector(".scene-fallback")?.remove();
+    heroStatus.textContent = currentModelConfig.status;
+  });
 
-    const animate = () => {
-      const elapsed = clock.getElapsedTime();
-      const lerpAmount = reduceMotion ? 0.2 : 0.08;
+  dogViewer.addEventListener("error", () => {
+    tryNextModelCandidate();
+  });
 
-      smoothPointer.x += (pointer.x - smoothPointer.x) * lerpAmount;
-      smoothPointer.y += (pointer.y - smoothPointer.y) * lerpAmount;
+  updateModelButtonState();
+  loadCurrentModel();
 
-      const transitionAmount = heroStage.classList.contains("is-transitioning") ? 1 : 0;
-      const targetRotationY = 0.65 + smoothPointer.x * 0.32 + transitionAmount * 0.28;
-      const targetRotationX = smoothPointer.y * 0.05 - transitionAmount * 0.03;
-
-      dogRoot.rotation.y += (targetRotationY - dogRoot.rotation.y) * 0.06;
-      dogRoot.rotation.x += (targetRotationX - dogRoot.rotation.x) * 0.06;
-      dogRoot.position.x += (smoothPointer.x * 0.18 - dogRoot.position.x) * 0.04;
-      dogRoot.position.y = Math.sin(elapsed * 1.45) * 0.07;
-
-      camera.position.z += ((transitionAmount ? 7.6 : 8.4) - camera.position.z) * 0.03;
-      floorGlow.scale.setScalar(1 + Math.sin(elapsed * 1.4) * 0.015);
-
-      sparkles.forEach((sparkle) => {
-        const { angle, radius, height, speed } = sparkle.userData;
-        const orbit = angle + elapsed * speed;
-        sparkle.position.set(
-          Math.cos(orbit) * radius,
-          height + Math.sin(elapsed * speed * 2 + angle) * 0.18,
-          Math.sin(orbit) * radius * 0.52
-        );
-      });
-
-      renderer.render(scene, camera);
-      requestAnimationFrame(animate);
-    };
-
-    animate();
-  } catch (error) {
-    showSceneFallback();
+  function updateModelButtonState() {
+    modelButtons.forEach((button) => {
+      const isActive = button.dataset.modelKey === activeModelKey;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-selected", String(isActive));
+    });
   }
 
-  function showSceneFallback() {
-    if (heroStage.querySelector(".scene-fallback")) {
+  function loadCurrentModel() {
+    syncVisualMode();
+    heroStage.classList.remove("is-model-ready");
+    heroStage.querySelector(".scene-fallback")?.remove();
+    pendingModelCandidates = currentModelConfig.candidates.map((path) =>
+      new URL(path, import.meta.url).href
+    );
+
+    dogViewer.alt = currentModelConfig.alt;
+    dogViewer.setAttribute("camera-orbit", currentModelConfig.cameraOrbit);
+    dogViewer.setAttribute("min-camera-orbit", currentModelConfig.minCameraOrbit);
+    dogViewer.setAttribute("max-camera-orbit", currentModelConfig.maxCameraOrbit);
+    dogViewer.setAttribute("field-of-view", currentModelConfig.fieldOfView);
+    dogViewer.setAttribute("exposure", currentModelConfig.exposure);
+    heroStatus.textContent = `Loading ${currentModelConfig.label}...`;
+
+    if (modelFallbackTimeout) {
+      window.clearTimeout(modelFallbackTimeout);
+    }
+
+    modelFallbackTimeout = window.setTimeout(() => {
+      if (!heroStage.classList.contains("is-model-ready")) {
+        showSceneFallback(getModelFallbackMessage());
+      }
+    }, 5000);
+
+    tryNextModelCandidate();
+  }
+
+  function tryNextModelCandidate() {
+    const nextModelSrc = pendingModelCandidates.shift();
+    if (!nextModelSrc) {
+      showSceneFallback(getModelFallbackMessage());
+      return;
+    }
+
+    dogViewer.src = nextModelSrc;
+  }
+
+  function getModelFallbackMessage() {
+    if (window.location.protocol === "file:") {
+      return "The 3D model viewer is blocked over file://. Run the local preview server from the README to view Pocky or Yuki.";
+    }
+
+    if (activeModelKey === "yuki") {
+      return "Yuki could not be found yet. Add Yuki's .glb file to /assets and the switcher will pick it up automatically.";
+    }
+
+    return "Pocky could not load here right now, but the gallery and message are still available.";
+  }
+
+  function showSceneFallback(message) {
+    dogViewer.style.opacity = "0";
+    heroStage.classList.remove("is-model-ready");
+    heroStatus.textContent = message;
+
+    const existing = heroStage.querySelector(".scene-fallback");
+    if (existing) {
+      existing.textContent = message;
       return;
     }
 
     const fallback = document.createElement("div");
     fallback.className = "scene-fallback";
-    fallback.textContent = "The public golden retriever model could not load here, but the rest of the anniversary story is ready.";
+    fallback.textContent = message;
     heroStage.appendChild(fallback);
   }
 }
 
-function createBackdropSvg(colors) {
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-      <defs>
-        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="${colors.top}" />
-          <stop offset="100%" stop-color="${colors.bottom}" />
-        </linearGradient>
-      </defs>
-      <rect width="800" height="1000" rx="64" fill="url(#sky)" />
-      <circle cx="590" cy="200" r="124" fill="${colors.glow}" opacity="0.62" />
-      <ellipse cx="250" cy="210" rx="120" ry="40" fill="${colors.detail}" opacity="0.7" />
-      <ellipse cx="422" cy="174" rx="95" ry="30" fill="${colors.detail}" opacity="0.58" />
-      <path d="M0 680C132 628 266 664 380 620C492 576 617 620 800 560V1000H0Z" fill="${colors.hill}" />
-      <path d="M0 744C182 670 338 736 516 688C636 656 710 690 800 666V1000H0Z" fill="${colors.accent}" opacity="0.3" />
-      <g fill="${colors.detail}" opacity="0.7">
-        <circle cx="148" cy="586" r="14" />
-        <circle cx="690" cy="630" r="10" />
-        <circle cx="226" cy="636" r="11" />
-      </g>
-    </svg>
-  `;
-
-  return svgToDataUri(svg);
+function syncVisualMode() {
+  document.body.classList.toggle("mode-yuki", activeModelKey === "yuki");
 }
 
-function createDepthSvg({ accent, detail, sticker, stroke, label }) {
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-      <g transform="translate(108 116)">
-        <rect x="0" y="0" width="584" height="430" rx="48" fill="${sticker}" opacity="0.82" />
-        <rect x="46" y="52" width="492" height="320" rx="28" fill="${detail}" />
-        <circle cx="136" cy="144" r="62" fill="${accent}" opacity="0.3" />
-        <path d="M178 278c38-70 156-102 232-48 77 55 62 152-24 191-78 35-187-6-223-81-16-35-12-51 15-62Z" fill="${accent}" opacity="0.72" />
-        <path d="M225 248c18-28 50-43 84-43 62 0 112 50 112 112 0 22-7 43-20 61-40 9-83 7-127-5-54-15-86-71-49-125Z" fill="${detail}" opacity="0.95" />
-        <circle cx="314" cy="246" r="22" fill="${sticker}" opacity="0.88" />
-        <path d="M118 88c32-22 71-32 118-32 58 0 118 19 168 58" fill="none" stroke="${stroke}" stroke-width="14" stroke-linecap="round" opacity="0.55" />
-        <path d="M470 306c24-17 53-48 62-88" fill="none" stroke="${stroke}" stroke-width="12" stroke-linecap="round" opacity="0.62" />
-      </g>
-      <g transform="translate(186 624)">
-        <rect x="0" y="0" width="428" height="112" rx="56" fill="${sticker}" opacity="0.86" />
-        <text x="214" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="${stroke}" letter-spacing="6">${label}</text>
-      </g>
-    </svg>
-  `;
-
-  return svgToDataUri(svg);
-}
-
-function createCoverSvg({ top, bottom, accent, line, label }) {
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-      <defs>
-        <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="${top}" />
-          <stop offset="100%" stop-color="${bottom}" />
-        </linearGradient>
-      </defs>
-      <rect width="400" height="400" rx="90" fill="url(#cover)" />
-      <circle cx="290" cy="110" r="66" fill="${accent}" opacity="0.85" />
-      <circle cx="148" cy="194" r="96" fill="${accent}" opacity="0.38" />
-      <path d="M88 252c62-58 145-76 214-42" fill="none" stroke="${line}" stroke-width="22" stroke-linecap="round" opacity="0.8" />
-      <path d="M94 308c62-54 146-69 214-36" fill="none" stroke="${line}" stroke-width="18" stroke-linecap="round" opacity="0.5" />
-      <text x="200" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="86" font-weight="700" fill="${line}">${label}</text>
-    </svg>
-  `;
-
-  return svgToDataUri(svg);
-}
-
-function svgToDataUri(svg) {
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg.trim())}`;
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
 }

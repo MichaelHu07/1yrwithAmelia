@@ -15,15 +15,19 @@
     rel="stylesheet"
   >
   <link rel="stylesheet" href="./styles.css">
+  <script
+    type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+  ></script>
 </head>
 <body>
   <div class="background-wash" aria-hidden="true">
-    <canvas id="petal-canvas"></canvas>
     <span class="wash-orb orb-one"></span>
     <span class="wash-orb orb-two"></span>
     <span class="wash-orb orb-three"></span>
     <span class="wash-grid"></span>
   </div>
+  <canvas id="petal-canvas" aria-hidden="true"></canvas>
 
   <header class="journey-nav" aria-label="Story navigation">
     <button class="journey-nav__button is-active" type="button" data-scroll-target="hero">Home</button>
@@ -32,50 +36,75 @@
   </header>
 
   <section class="hero-stage" id="hero" data-journey-section="hero">
-    <canvas id="dog-scene" aria-hidden="true"></canvas>
-    <div class="hero-stage__veil"></div>
+    <model-viewer
+      id="dog-viewer"
+      alt="A low poly pet model"
+      camera-controls
+      auto-rotate
+      interaction-prompt="none"
+      disable-zoom
+      shadow-intensity="0"
+      exposure="1.02"
+      camera-orbit="32deg 78deg auto"
+      min-camera-orbit="auto 58deg auto"
+      max-camera-orbit="auto 102deg auto"
+      loading="eager"
+      touch-action="pan-y"
+    ></model-viewer>
 
-    <div class="hero-copy">
-      <p class="hero-copy__eyebrow">Our Anniversary Story</p>
-      <h1>Blue skies, soft paws, and the way everything feels better with you.</h1>
-      <p class="hero-copy__lede">
-        The site opens with the retriever front and center, then drifts into a
-        scrapbook-like gallery before landing on a little note made just for her.
+    <div class="hero-menu" id="hero-menu" aria-label="Home menu">
+      <div class="hero-menu__row">
+        <button class="hero-menu__button" type="button" data-hero-target="gallery-intro">
+          Gallery
+        </button>
+        <button class="hero-menu__button" type="button" data-hero-target="message-stage">
+          Message
+        </button>
+      </div>
+
+      <div class="hero-menu__row hero-menu__row--models" role="tablist" aria-label="Choose the 3D model">
+        <button
+          class="hero-menu__button hero-menu__button--model is-active"
+          type="button"
+          data-model-key="pocky"
+          role="tab"
+          aria-selected="true"
+        >
+          Pocky
+        </button>
+        <button
+          class="hero-menu__button hero-menu__button--model"
+          type="button"
+          data-model-key="yuki"
+          role="tab"
+          aria-selected="false"
+        >
+          Yuki
+        </button>
+      </div>
+
+      <p class="hero-menu__status" id="hero-status" aria-live="polite">
+        Pocky is on screen. Drag to orbit.
       </p>
     </div>
-
-    <button class="start-journey" id="start-journey" type="button">
-      Left click to begin our story
-    </button>
-
-    <p class="hero-hint" id="hero-hint">
-      Move your mouse to nudge the retriever, then click anywhere on this scene to glide into the gallery.
-    </p>
   </section>
 
   <main class="story-shell">
     <section class="gallery-intro section-shell" id="gallery-intro" data-journey-section="gallery">
       <p class="section-shell__eyebrow">Gallery</p>
-      <h2>Scroll through the little moments that feel the most like us.</h2>
-      <p class="section-shell__lede">
-        Instead of cards in a grid, each memory floats to one side with the words
-        breathing on the other, so the whole page feels more like a soft storybook.
-      </p>
     </section>
 
     <section class="memory-stack" id="memory-stack" aria-label="Memory gallery"></section>
 
     <section class="message-transition" id="message-transition">
       <p class="message-transition__eyebrow">One more thing</p>
-      <h2>There's a letter waiting at the end of the scroll.</h2>
+      <h2>A Short Message For You.</h2>
       <button class="transition-button" id="open-letter-journey" type="button">
         Open the message
       </button>
     </section>
 
     <section class="message-stage" id="message-stage" data-journey-section="message">
-      <div class="message-stage__floating" id="message-reasons" aria-hidden="true"></div>
-
       <div class="message-stage__inner">
         <button class="letter-toggle" id="letter-toggle" type="button" aria-expanded="false">
           Open the note
@@ -83,9 +112,10 @@
 
         <article class="letter-card" id="letter-card">
           <div class="letter-card__paper">
-            <p class="letter-greeting">To my favorite person,</p>
+            <p class="letter-greeting">Dear Amelia Cheung 章馨予,</p>
             <div class="message-content" id="message-content"></div>
-            <p class="letter-signature">Love always,<br><span>Yours</span></p>
+            <p class="letter-signature">From<br><span>胡韦珩 Michael Hu
+</span></p>
           </div>
         </article>
       </div>
@@ -96,7 +126,7 @@
     <div class="music-cover" id="music-cover" aria-hidden="true"></div>
 
     <div class="music-meta">
-      <p class="music-meta__eyebrow">Looped Playlist</p>
+      <p class="music-meta__eyebrow">Playlist For You</p>
       <h3 id="music-title">Bluebell Waltz</h3>
       <p id="music-artist">Soft Tape Mix</p>
     </div>
@@ -124,10 +154,10 @@
 
     <label class="volume-control" for="volume-slider">
       <span>Volume</span>
-      <input id="volume-slider" type="range" min="0" max="100" value="56">
+      <input id="volume-slider" type="range" min="0" max="100" step="0.25" value="31.25">
     </label>
 
-    <p class="music-status" id="music-status">Tap play once and the playlist will keep looping in the corner.</p>
+    <p class="music-status" id="music-status">The playlist starts softly and keeps looping in the corner.</p>
   </aside>
 
   <script type="module" src="./main.js"></script>
