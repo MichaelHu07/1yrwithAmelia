@@ -114,8 +114,8 @@ const memories = [
   },
   {
     eyebrow: "",
-    title: "The Cutest Sleepyhead Ever",
-    copy: "Skin as white as snow and softer than marshmallows",
+    title: "Vacation with a sleepyhead",
+    copy: "Your legs really are quite soft",
     detail: "",
     align: "right",
     photo: "./assets/gallery/img-3359-photo.jpg",
@@ -129,7 +129,7 @@ const memories = [
   },
   {
     eyebrow: "",
-    title: "Holding Hands With You On A Hike",
+    title: "Holding Hands On A Big Mountain",
     copy: "I don't want you to trip and hurt yourself so hold on and never let go",
     detail: "",
     align: "left",
@@ -144,7 +144,7 @@ const memories = [
   },
   {
     eyebrow: "",
-    title: "The Luckiest Guy Ever With The Prettiest Girl Ever",
+    title: "The Luckiest Guy Ever",
     copy: "\"How did he pull you\" -Katherine Hu",
     detail: "",
     align: "right",
@@ -160,7 +160,7 @@ const memories = [
   {
     eyebrow: "",
     title: "Last Day At Oxford",
-    copy: "Somehow, You made me love my first semester at Oxford. I hope you feel the same way",
+    copy: "Somehow, You made me love my first semester at Oxford.",
     detail: "",
     align: "left",
     photo: "./assets/gallery/img-9787-photo.jpg",
@@ -260,7 +260,6 @@ const heroMenuButtons = Array.from(document.querySelectorAll("[data-hero-target]
 const modelButtons = Array.from(document.querySelectorAll("[data-model-key]"));
 const galleryIntro = document.querySelector("#gallery-intro");
 const messageStage = document.querySelector("#message-stage");
-const openLetterJourneyButton = document.querySelector("#open-letter-journey");
 const memoryStack = document.querySelector("#memory-stack");
 const messageContent = document.querySelector("#message-content");
 const letterCard = document.querySelector("#letter-card");
@@ -421,11 +420,6 @@ function setupJourney() {
         window.setTimeout(() => setLetterState(true), 650);
       }
     });
-  });
-
-  openLetterJourneyButton.addEventListener("click", () => {
-    messageStage.scrollIntoView({ behavior: "smooth", block: "start" });
-    window.setTimeout(() => setLetterState(true), 650);
   });
 
   const syncNavVisibility = () => {
